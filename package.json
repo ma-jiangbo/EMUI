@@ -1,0 +1,26 @@
+{
+  "name": "emui",
+  "version": "1.0.0",
+  "description": "react试着造一些轮子",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangboM/EMUI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangboM/EMUI/issues"
+  },
+  "homepage": "https://github.com/jiangboM/EMUI#readme"
+}
