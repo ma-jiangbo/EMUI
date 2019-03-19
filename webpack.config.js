@@ -1,3 +1,5 @@
+const path = require(path);
+// import path from 'path';
 
 module.exports = {
     mode: 'production',
@@ -16,5 +18,5 @@ module.exports = {
                 loader: 'awesome-typescript-loader'
             }
         ]
-}
+    }
 }
