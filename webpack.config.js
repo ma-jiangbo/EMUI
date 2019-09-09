@@ -1,4 +1,4 @@
-const path = require(path);
+const path = require('path');
 // import path from 'path';
 
 module.exports = {
@@ -12,11 +12,9 @@ module.exports = {
         libraryTarget: 'umd',
     },
     module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                loader: 'awesome-typescript-loader'
-            }
-        ]
+        rules: [{
+            test: /\.tsx?$/,
+            loader: 'awesome-typescript-loader'
+        }]
     }
 }
