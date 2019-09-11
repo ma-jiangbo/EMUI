@@ -1,4 +1,8 @@
-console.log('test rsa')
-let div = document.createElement('div')
-div.innerText = 'js loading'
-document.body.append(div)
+import React from 'react'
+import ReactDom from 'react-dom'
+import Button from './button'
+
+ReactDom.render(
+    <Button />,
+    document.getElementById('root')
+)
