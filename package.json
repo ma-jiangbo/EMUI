@@ -2,25 +2,31 @@
   "name": "emui",
   "version": "1.0.0",
   "description": "react试着造一些轮子",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.9.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.6.2",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
