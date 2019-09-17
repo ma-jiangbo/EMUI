@@ -15,9 +15,15 @@ module.exports = {
         libraryTarget: 'umd',
     },
     module: {
-        rules: [{
-            test: /\.tsx?$/,
-            loader: 'awesome-typescript-loader'
-        }]
+        rules: [
+            {
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader'
+            },
+            {
+                test: /\.svg?$/,
+                loader: 'svg-sprite-loader',
+            }
+        ]
     }
 };
