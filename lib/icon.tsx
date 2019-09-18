@@ -1,17 +1,16 @@
 import React from "react";
 import '../asset/icon/wechat.svg'
+import './style/icon.sass'
 
 interface IconProps {
     name: string
 }
 
-const  Icon: React.FunctionComponent<IconProps> = (props) => {
+const Icon: React.FunctionComponent<IconProps> = (props) => {
     return (
-        <span>
-            <svg>
-                <use xlinkHref={`#${props.name}`}/>
-            </svg>
-        </span>
+        <svg className='icon-wrap'>
+            <use xlinkHref={`#${props.name}`}/>
+        </svg>
     )
 };
 

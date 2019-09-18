@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
-        library: 'EMUI',
+        library: 'emui',
         libraryTarget: 'umd',
     },
     module: {
@@ -23,6 +23,14 @@ module.exports = {
             {
                 test: /\.svg?$/,
                 loader: 'svg-sprite-loader',
+            },
+            {
+                test: /\.s([ac])ss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     }
