@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`icon is SVG 1`] = `
+<svg
+  className="icon-wrap"
+>
+  <use
+    xlinkHref="#wechat"
+  />
+</svg>
+`;

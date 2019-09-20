@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Icon from './icon/icon'
+import Component from './icon/icon'
 
 const iconClick: React.MouseEventHandler = event => {
     console.log(event.target)
@@ -8,7 +8,7 @@ const iconClick: React.MouseEventHandler = event => {
 
 ReactDom.render(
     <div>
-        <Icon name='wechat' onClick={iconClick}/>
+        <Component name='wechat' onClick={iconClick}/>
     </div>,
     document.getElementById('root')
 );

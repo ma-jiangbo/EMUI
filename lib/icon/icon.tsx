@@ -1,13 +1,13 @@
 import React from "react";
 import '../../asset/icon/wechat.svg'
-import '../style/icon.sass'
-import classes from '../../utils/classNames'
+import './icon.sass'
+import classes from '../utils/classNames'
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
     //
 }
 
-const Icon: React.FunctionComponent<IconProps> = ({className, name, ...props}) => {
+const Component: React.FunctionComponent<IconProps> = ({className, name, ...props}) => {
     return (
         <svg {...props} className={classes('icon-wrap', className)}>
             <use xlinkHref={`#${name}`}/>
@@ -15,4 +15,4 @@ const Icon: React.FunctionComponent<IconProps> = ({className, name, ...props}) =
     )
 };
 
-export default Icon
+export default Component
