@@ -1,4 +1,5 @@
-import renderer from 'react-test-renderer'
+// import jest from '@types/jest'
+import * as renderer from 'react-test-renderer'
 import { mount } from 'enzyme'
 import React from "react";
 import Icon from '../icon'
