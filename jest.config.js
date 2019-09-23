@@ -4,7 +4,7 @@ module.exports = {
     // collectCoverage: false,
 
     collectCoverage: true,
-    reporters: ['default'],
+    reporters: ['default', 'jest-junit'],
     collectCoverageFrom: ['lib/**/*.{ts,tsx}', '!**/node_modules/**'],
     coverageDirectory: 'coverage',
     coverageReporters: ['text', 'lcov'],
