@@ -1,9 +1,12 @@
 {
   "name": "emui",
-  "version": "1.0.0",
-  "description": "react试着造一些轮子",
+  "version": "0.0.1",
+  "description": "ui components for react",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
+  "files":[
+    "dist/**/*"
+  ],
   "dependencies": {
     "css-loader": "^3.2.0",
     "node-sass": "^4.12.0",
