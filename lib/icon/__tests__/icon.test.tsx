@@ -9,7 +9,7 @@ describe('icon', ()=> {
        const json = renderer.create(<Icon name='wechat' />).toJSON();
        expect(json).toMatchSnapshot()
    });
-    it( 'icon onclick', () => {
+    it( 'asset onclick', () => {
         const fn = jest.fn();
         const c = mount(<Icon name='wechat' onClick={fn} />);
         c.find('svg').simulate('click');
