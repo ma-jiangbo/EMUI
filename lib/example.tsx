@@ -1,30 +1,32 @@
-import React from 'react'
-import ReactDom from 'react-dom'
+import * as React from 'react'
+import * as ReactDom from 'react-dom'
 import {HashRouter as Router, Link, Route} from 'react-router-dom'
 import IconExample from "./icon/icon.example";
 import ButtonExample from "./icon/button.example";
+import './example.scss'
 
 ReactDom.render(
     <Router>
-        <div>
+        <div className="home-page">
             <header>
-                header
+                <img src="../asset/logo.png" alt="logo"/>
+                <span>EMUI</span>
             </header>
-            <div>
+            <div className="content">
                 <aside>
-                    <h2>components</h2>
+                    <h2>组件</h2>
                     <ul>
                         <li>
-                            <Link to='./icon'>icon</Link>
+                            <Link className="link" to='./icon'>icon</Link>
                         </li>
                         <li>
-                            <Link to='./button'>input</Link>
+                            <Link className="link" to='./button'>input</Link>
                         </li>
                         <li>
-                            <Link to='./icon'>button</Link>
+                            <Link className="link" to='./icon'>button</Link>
                         </li>
                         <li>
-                            <Link to='./icon'>table</Link>
+                            <Link className="link" to='./icon'>table</Link>
                         </li>
                     </ul>
                 </aside>

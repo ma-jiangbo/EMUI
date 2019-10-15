@@ -1,0 +1,43 @@
+.home-page {
+  header{
+    padding: 0 2%;
+    height: 4rem;
+    font-size: 2.5rem;
+    border-bottom: #000 1px solid;
+    img {
+      width: 3rem;
+      margin-right: 1rem;
+      vertical-align: middle;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+  .content {
+    padding: 1rem 2%;
+    display: flex;
+    justify-content: stretch;
+    min-height: 100vh;
+    aside {
+      width: 10%;
+      border-right: 1px solid #000;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          .link {
+            display: block;
+            padding: 1rem 0;
+            text-decoration: none;
+            color: #000;
+          }
+          .link:hover {
+            background: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
