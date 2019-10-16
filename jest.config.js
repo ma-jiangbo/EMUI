@@ -1,13 +1,9 @@
 module.exports = {
     verbose: true,
     clearMocks: false,
+    reporters: ['default'],
     // collectCoverage: false,
 
-    collectCoverage: true,
-    reporters: ['default', 'jest-junit'],
-    collectCoverageFrom: ['lib/**/*.{ts,tsx}', '!**/node_modules/**'],
-    coverageDirectory: 'coverage',
-    coverageReporters: ['text', 'lcov'],
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     moduleDirectories: ['node_modules'],
     globals: {
@@ -22,7 +18,7 @@ module.exports = {
     testMatch: ['<rootDir>/**/__tests__/**/*.test.(js|jsx|ts|tsx)'],
     transform: {
       "^.+test\\.(js|jsx)$": "babel-jest",
-      '^.+\\.(ts|tsx)$': 'ts-jest',
+        '^.+\\.(ts|tsx)$': 'ts-jest',
     },
     setupFilesAfterEnv: ["<rootDir>test/setupTests.js"]
   };
