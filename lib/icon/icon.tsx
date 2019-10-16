@@ -1,8 +1,7 @@
 import React from "react";
-// import '../../asset/icon/wechat.svg'
 import './importAll'
 import './icon.scss'
-import classes from '../utils/classNames'
+import { classNames as classes } from '../utils/classNames'
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
     //
