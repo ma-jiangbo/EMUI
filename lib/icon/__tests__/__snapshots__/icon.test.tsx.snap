@@ -2,7 +2,7 @@
 
 exports[`icon is SVG 1`] = `
 <svg
-  className="asset-wrap"
+  className="emui-icon-wrap"
 >
   <use
     xlinkHref="#wechat"
