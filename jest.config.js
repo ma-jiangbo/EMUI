@@ -18,7 +18,7 @@ module.exports = {
     testMatch: ['<rootDir>/**/__tests__/**/*.test.(js|jsx|ts|tsx)'],
     transform: {
       "^.+test\\.(js|jsx)$": "babel-jest",
-      '^.+\\.(ts|tsx)$': 'ts-jest',
+        '^.+\\.(ts|tsx)$': 'ts-jest',
     },
     setupFilesAfterEnv: ["<rootDir>test/setupTests.js"]
   };

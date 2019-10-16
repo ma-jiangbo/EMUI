@@ -20,8 +20,8 @@
       "noUnusedLocals": true
     },
     "include": [
-//      "lib/**/*",
-//      "types/**/*"
+      "lib/**/*",
+      "types/**/*"
     ],
     "exclude": [
       "node_modules",

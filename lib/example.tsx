@@ -2,12 +2,12 @@ import * as React from 'react'
 import * as ReactDom from 'react-dom'
 import {HashRouter as Router, Link, Route} from 'react-router-dom'
 import IconExample from "./icon/icon.example";
-import ButtonExample from "./icon/button.example";
+import DialogExample from "./dialog/dialog.example";
 import './example.scss'
 
 ReactDom.render(
     <Router>
-        <div className="home-page">
+        <div className="emui-home-page">
             <header>
                 <img src="../asset/logo.png" alt="logo"/>
                 <span>EMUI</span>
@@ -20,7 +20,7 @@ ReactDom.render(
                             <Link className="link" to='./icon'>icon</Link>
                         </li>
                         <li>
-                            <Link className="link" to='./button'>input</Link>
+                            <Link className="link" to='./dialog'>dialog</Link>
                         </li>
                         <li>
                             <Link className="link" to='./icon'>button</Link>
@@ -32,7 +32,7 @@ ReactDom.render(
                 </aside>
                 <main>
                     <Route path='/icon' component={IconExample} />
-                    <Route path='/button' component={ButtonExample} />
+                    <Route path='/dialog' component={DialogExample} />
                 </main>
             </div>
         </div>
