@@ -1,0 +1,19 @@
+.emui-example-custom-layout {
+  height: 300px;
+  width: 500px;
+ .emui-layout-sider {
+    min-width: 10%;
+    background: #efea5f;
+  }
+  .emui-layout-header {
+    min-height: 10%;
+    background: #abefeb;
+  }
+  .emui-layout-content {
+    background: #41ef68;
+  }
+  .emui-layout-footer {
+    min-height: 10%;
+    background: #51a5ef;
+  }
+}

@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom'
 import {HashRouter as Router, Link, Route} from 'react-router-dom'
 import IconExample from "./icon/icon.example";
 import DialogExample from "./dialog/dialog.example";
+import LayoutExample from './layout/layout.example'
 import './example.scss'
 
 ReactDom.render(
@@ -23,7 +24,7 @@ ReactDom.render(
                             <Link className="link" to='./dialog'>dialog</Link>
                         </li>
                         <li>
-                            <Link className="link" to='./icon'>button</Link>
+                            <Link className="link" to='./layout'>layout</Link>
                         </li>
                         <li>
                             <Link className="link" to='./icon'>table</Link>
@@ -33,6 +34,7 @@ ReactDom.render(
                 <main>
                     <Route path='/icon' component={IconExample} />
                     <Route path='/dialog' component={DialogExample} />
+                    <Route path='/layout' component={LayoutExample}/>
                 </main>
             </div>
         </div>
