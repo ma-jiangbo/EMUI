@@ -1,6 +1,5 @@
 import React, {ReactElement} from "react";
-import {scopeClassMaker} from "../utils/classNames";
-import {classNames} from "../utils/classNames";
+import {scopeClassMaker, classNames} from "../utils/classNames";
 import './layout.scss'
 import Sider from "./sider";
 
