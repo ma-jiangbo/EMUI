@@ -2,6 +2,10 @@
 $padding: 16px;
 $border-color: #eee;
 $active-color: #ABE0E3;
+pre {
+  //font-size: 20px;
+  font-family: "Fira Code Medium", Consolas, monospace;
+}
 .example-layout {
   min-height: 100vh;
   &-header {
