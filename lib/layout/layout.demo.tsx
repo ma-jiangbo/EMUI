@@ -32,16 +32,16 @@ const LayoutDemo = () => {
                 </ul>
             </div>
             <div>
-                <Demo code={require('!!raw-loader!./layout.example.tsx').default}>
+                <Demo code={require('!!raw-loader!./layout.example.tsx').default} describe='普通三段式布局'>
                     <LayoutExample1/>
                 </Demo>
-                <Demo code={require('!!raw-loader!./layout.example2.tsx').default}>
+                <Demo code={require('!!raw-loader!./layout.example2.tsx').default} describe='带有侧栏的三段式布局'>
                     <LayoutExample2/>
                 </Demo>
-                <Demo code={require('!!raw-loader!./layout.example3.tsx').default}>
+                <Demo code={require('!!raw-loader!./layout.example3.tsx').default} describe='右侧栏布局'>
                     <LayoutExample3/>
                 </Demo>
-                <Demo code={require('!!raw-loader!./layout.example4.tsx').default}>
+                <Demo code={require('!!raw-loader!./layout.example4.tsx').default} describe='整体侧栏布局'>
                     <LayoutExample4/>
                 </Demo>
             </div>

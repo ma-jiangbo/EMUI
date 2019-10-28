@@ -1,30 +1,18 @@
-import React, { Fragment} from 'react'
-import {alert, confirm, modal} from "../index";
+import React from 'react'
+import {alert, confirm } from "../index";
 
 export default function () {
-    const openModal = () => {
-        const close = modal(
-            <div>
-                <h1>modal</h1>
-                <button onClick={() => {close()}}>close</button>
-            </div>
-        ).close
-    };
-
     return (
-        <Fragment>
+        <div className='emui-dialog-example2'>
             <div>
-                <button onClick={() => {alert('q')}}>alert</button>
+                <button onClick={() => {alert('warning content !')}}>alert</button>
             </div>
             <div>
                 <button onClick={
-                    () => {confirm('q', () => {console.log('ok')}, () => {console.log('cancel')})}
+                    () => {confirm('are you sure ?', () => {console.log('ok')}, () => {console.log('cancel')})}
                 }>confirm</button>
             </div>
-            <div>
-                <button onClick={() => {openModal()}}>modal</button>
-            </div>
-        </Fragment>
+        </div>
     )
 
 };
