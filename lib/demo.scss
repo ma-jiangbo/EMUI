@@ -1,0 +1,31 @@
+.emui-component-demo {
+  margin-top: 16px;
+  border: 1px solid #eee;
+  &-preview {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  &-desc {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > button {
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 1.5em;
+      background: #fff;
+      color: #666;
+      outline: none;
+
+      &:hover {
+        background: darken(#fff, 20%);
+      }
+    }
+  }
+  &-code {
+    padding: 16px;
+    border-top: 1px solid #eee;
+  }
+}

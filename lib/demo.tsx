@@ -1,19 +1,25 @@
 import React, {useState} from 'react';
-import Highlight, { defaultProps } from "prism-react-renderer";
+import Highlight, {defaultProps} from "prism-react-renderer";
+import './demo.scss'
 
 interface props {
-    code: string
+    code: string,
+    describe?: string
 }
+
 const Demo: React.FunctionComponent<props> = (props) => {
     const [visible, setVisible] = useState(false);
     return (
-        <div>
-            <div>
+        <div className='emui-component-demo'>
+            <div className='emui-component-demo-preview'>
                 {props.children}
             </div>
-            <div>
+            <div className="emui-component-demo-desc">
+                <p>{props.describe}</p>
                 <button onClick={() => setVisible(!visible)}>{'<>'}</button>
-                {visible && (
+            </div>
+
+            {visible && (<div className='emui-component-demo-code'>
                     <Highlight {...defaultProps} code={props.code} language='jsx'>
                         {({className, style, tokens, getLineProps, getTokenProps}) => (
                             <pre className={className} style={style}>
@@ -27,9 +33,9 @@ const Demo: React.FunctionComponent<props> = (props) => {
                     </pre>
                         )}
                     </Highlight>
-                )}
-            </div>
 
+                </div>
+            )}
         </div>
     )
 };
