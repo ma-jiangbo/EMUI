@@ -2,6 +2,9 @@ import React, {ReactElement} from "react";
 import {scopeClassMaker, classNames} from "../utils/classNames";
 import './layout.scss'
 import Sider from "./sider";
+import Header from "./header";
+import Content from "./content";
+import Footer from "./footer";
 
 interface props extends React.HTMLAttributes<HTMLElement>{
     children: ReactElement | Array<ReactElement>
@@ -20,3 +23,4 @@ const Layout: React.FunctionComponent<props> = (props) => {
 };
 
 export default Layout
+export { Header, Content, Sider, Footer }

@@ -1,44 +1,58 @@
 @import "./index.scss";
-.emui-home-page {
-  & > header{
-    padding: 0 2%;
-    height: 4rem;
-    font-size: 2.5rem;
-    border-bottom: $theme-color 1px solid;
-    img {
-      width: 3rem;
-      margin-right: 1rem;
-      vertical-align: middle;
+$padding: 16px;
+$border-color: #eee;
+$active-color: #ABE0E3;
+.example-layout {
+  min-height: 100vh;
+  &-header {
+    >.icon {
+      display: flex;
+      align-items: center;
+      //background: #eee;
+      padding: 8px $padding;
+      border-bottom: 1px solid $border-color;
+      > span {
+        color: #3FBAC2;
+        font-size: 32px;
+      }
     }
-    span {
-      vertical-align: middle;
-    }
+
   }
-  & .content {
-    padding: 1rem 2%;
-    display: flex;
-    justify-content: stretch;
-    min-height: 100vh;
-    aside {
-      width: 10%;
-      border-right: 1px solid $theme-color;
+  &-layout {
+    padding: 10px 0;
+    &-sider {
+      min-width: 12em;
+      border-right: 1px solid $border-color;
+      h2 {
+        padding: $padding;
+        font-size: 18px;
+      }
       ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li {
-          .link {
+        padding: 0 $padding;
+        > li {
+          a {
             display: block;
-            padding: 1rem 0;
-            text-decoration: none;
-            color: $theme-color;
-          }
-          .link:hover {
-            background: $theme-color;
-            color: #fff;
+            padding: 8px $padding;
+            &:hover {
+              color: $theme-color;
+            }
+            &.active {
+              color: #fff;
+              background: $active-color;
+            }
           }
         }
       }
     }
+    &-content {
+      padding: $padding;
+    }
+  }
+  &-footer {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 16px;
+    border-top: 1px solid $border-color;
   }
 }
