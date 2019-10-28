@@ -1,7 +1,7 @@
 // import './index.scss'
 import Icon from './icon/icon'
-import Dialog from "./dialog/dialog";
 import Layout, {Header, Sider, Footer, Content } from "./layout/layout";
+import Dialog, {alert, confirm, modal} from "./dialog/dialog";
 
 export  {
     Icon,
@@ -10,5 +10,8 @@ export  {
     Header,
     Sider,
     Footer,
-    Content
+    Content,
+    alert,
+    confirm,
+    modal
 }

@@ -7,6 +7,15 @@ pre {
   font-family: "Fira Code Medium", Consolas, monospace;
   padding: 8px 10px;
 }
+code {
+  margin: 0 1px;
+  padding: .2em .4em;
+  font-size: .9em;
+  background: #f2f4f5;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
 .example-layout {
   min-height: 100vh;
   &-header {
@@ -50,7 +59,11 @@ pre {
       }
     }
     &-content {
-      padding: $padding;
+      >div{
+        padding: $padding;
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   }
   &-footer {

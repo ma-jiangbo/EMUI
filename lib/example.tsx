@@ -2,12 +2,12 @@ import  React from 'react'
 import ReactDom from 'react-dom'
 import {HashRouter as Router, NavLink, Route} from 'react-router-dom'
 import { Layout, Header, Content, Footer, Sider } from './index'
-// import IconExample from "./icon/icon.example";
-import DialogExample from "./dialog/dialog.example";
-import LayoutExample from './layout/layout.example';
+import IconDemo from "./icon/icon.demo";
+import DialogDemo from "./dialog/dialog.demo";
+import LayoutDemo from "./layout/layout.demo";
+import Empty from './other/empty'
 const logo = require('../asset/logo.png');
 import './example.scss'
-import IconDemo from "./icon/icon.demo";
 
 ReactDom.render(
     <Router>
@@ -23,23 +23,27 @@ ReactDom.render(
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <NavLink className="link" to='./icon'>icon</NavLink>
+                            <NavLink className="link" to='./layout'>layout 布局</NavLink>
                         </li>
                         <li>
-                            <NavLink className="link" to='./dialog'>dialog</NavLink>
+                            <NavLink className="link" to='./icon'>icon 图标</NavLink>
                         </li>
                         <li>
-                            <NavLink className="link" to='./layout'>layout</NavLink>
+                            <NavLink className="link" to='./dialog'>dialog 对话框</NavLink>
                         </li>
                         <li>
-                            <NavLink className="link" to='./table'>table</NavLink>
+                            <NavLink className="link" to='./table'>table 表格</NavLink>
                         </li>
                     </ul>
                 </Sider>
                 <Content className='example-layout-layout-content'>
-                    <Route path='/icon' component={IconDemo} />
-                    <Route path='/dialog' component={DialogExample} />
-                    <Route path='/layout' component={LayoutExample}/>
+                    <div>
+                        <Route path='/' component={LayoutDemo} exact />
+                        <Route path='/layout' component={LayoutDemo}/>
+                        <Route path='/icon' component={IconDemo} />
+                        <Route path='/dialog' component={DialogDemo} />
+                        <Route path='/table' component={Empty} />
+                    </div>
                 </Content>
             </Layout>
             <Footer className='example-layout-footer'>
