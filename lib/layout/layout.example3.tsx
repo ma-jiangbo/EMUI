@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Header, Content, Footer } from '../index'
+import { Layout, Header, Content, Footer, Sider } from '../index'
 import './layout.example.scss'
 
 export default function () {
@@ -7,7 +7,10 @@ export default function () {
             <div>
                 <Layout className="emui-example-custom-layout">
                     <Header>header</Header>
-                    <Content>content</Content>
+                    <Layout>
+                        <Content>content</Content>
+                        <Sider>sider</Sider>
+                    </Layout>
                     <Footer>footer</Footer>
                 </Layout>
             </div>
