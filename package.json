@@ -1,6 +1,6 @@
 {
   "name": "emui-react",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "ui components for react",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
