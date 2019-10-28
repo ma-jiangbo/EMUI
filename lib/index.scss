@@ -1,7 +1,13 @@
 //$theme-color: #6897d2; //青色
 //$theme-color: #356b63; //绿
 //$theme-color: #666;
-$theme-color: #000;
+$theme-color: #3FBAC2;
+* {margin: 0; padding: 0; box-sizing: border-box}
+*::before { box-sizing: border-box}
+*::after { box-sizing: border-box}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+ul,ol { list-style: none;}
+a {text-decoration: none; color: inherit}
 [class^=emui-] {
   box-sizing: border-box;
   &::before ,

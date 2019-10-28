@@ -1,41 +1,55 @@
-import * as React from 'react'
-import * as ReactDom from 'react-dom'
-import {HashRouter as Router, Link, Route} from 'react-router-dom'
-import IconExample from "./icon/icon.example";
-import DialogExample from "./dialog/dialog.example";
+import  React from 'react'
+import ReactDom from 'react-dom'
+import {HashRouter as Router, NavLink, Route} from 'react-router-dom'
+import { Layout, Header, Content, Footer, Sider } from './index'
+import IconDemo from "./icon/icon.demo";
+import DialogDemo from "./dialog/dialog.demo";
+import LayoutDemo from "./layout/layout.demo";
+import Empty from './other/empty'
+const logo = require('../asset/logo.png');
 import './example.scss'
 
 ReactDom.render(
     <Router>
-        <div className="emui-home-page">
-            <header>
-                <img src="../asset/logo.png" alt="logo"/>
-                <span>EMUI</span>
-            </header>
-            <div className="content">
-                <aside>
+        <Layout className='example-layout'>
+            <Header className='example-layout-header'>
+                <div className="icon">
+                    <img style={{ width: '48px', height: '48px' }} src={logo} alt="logo"/>
+                    <span>EMUI</span>
+                </div>
+            </Header>
+            <Layout className='example-layout-layout'>
+                <Sider className='example-layout-layout-sider'>
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <Link className="link" to='./icon'>icon</Link>
+                            <NavLink className="link" to='./layout'>layout 布局</NavLink>
                         </li>
                         <li>
-                            <Link className="link" to='./dialog'>dialog</Link>
+                            <NavLink className="link" to='./icon'>icon 图标</NavLink>
                         </li>
                         <li>
-                            <Link className="link" to='./icon'>button</Link>
+                            <NavLink className="link" to='./dialog'>dialog 对话框</NavLink>
                         </li>
                         <li>
-                            <Link className="link" to='./icon'>table</Link>
+                            <NavLink className="link" to='./table'>table 表格</NavLink>
                         </li>
                     </ul>
-                </aside>
-                <main>
-                    <Route path='/icon' component={IconExample} />
-                    <Route path='/dialog' component={DialogExample} />
-                </main>
-            </div>
-        </div>
+                </Sider>
+                <Content className='example-layout-layout-content'>
+                    <div>
+                        <Route path='/' component={LayoutDemo} exact />
+                        <Route path='/layout' component={LayoutDemo}/>
+                        <Route path='/icon' component={IconDemo} />
+                        <Route path='/dialog' component={DialogDemo} />
+                        <Route path='/table' component={Empty} />
+                    </div>
+                </Content>
+            </Layout>
+            <Footer className='example-layout-footer'>
+                &copy; majiangbo
+            </Footer>
+        </Layout>
     </Router>,
     document.querySelector('#root')
 );
